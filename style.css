@@ -57,11 +57,21 @@ p {
 
 .btn {
     background: var(--secondary-color);
-    color: var(--tertiary-color)
-
-
+    color: var(--tertiary-color);
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 2px grey;
 }
 
-.start {
-    width: 50%;
+.Start {
+    width: 15%;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.btn:hover {
+    opacity: 70%;
+    border-radius: 5px;
+    box-shadow: 0 2px grey;
+    cursor: pointer;
 }
