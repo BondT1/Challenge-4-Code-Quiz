@@ -19,12 +19,49 @@ header {
     display: flex;
     justify-content: space-between;
     margin: auto;
-    width: 85%;
+    width: 90%;
 }
 
 header h5 {
-    font-size: 1.7em;
+    font-size: 1.3em;
     display: inline; 
+    padding: 20px;
+}
+
+.homepage {
+    display: flex;
+}
+
+.box {
+    flex-direction: column;
+    margin: auto;
+    padding: 20px;
+    width: 50%;
+}
+
+.home {
+    text-align: center;
+    align-items: center;
+}    
+
+h1 {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+p {
+    font-size: 1.3em;
+    color: var(--primary-color);
+}
+
+.btn {
+    background: var(--secondary-color);
+    color: var(--tertiary-color)
 
 
+}
+
+.start {
+    width: 50%;
 }
