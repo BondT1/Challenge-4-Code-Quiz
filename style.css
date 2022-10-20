@@ -1,0 +1,30 @@
+:root {
+    --font-family: 'Trebuchet MS', Sans-Serif;
+    --primary-color: #000000; 
+    --secondary-color: #680581; 
+    --tertiary-color: #ffffff; 
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--tertiary-color);
+    color: var(--secondary-color);
+    font-family: var(--font-family);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 85%;
+}
+
+header h5 {
+    font-size: 1.7em;
+    display: inline; 
+
+
+}
