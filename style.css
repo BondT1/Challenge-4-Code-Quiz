@@ -28,8 +28,12 @@ header h5 {
     padding: 20px;
 }
 
-.homepage {
+.add {
     display: flex;
+}
+
+.remove {
+    display: none;
 }
 
 .box {
@@ -74,4 +78,10 @@ p {
     border-radius: 5px;
     box-shadow: 0 2px grey;
     cursor: pointer;
+}
+
+.grid {
+    display: grid;
+    margin: 15px 0;
+    grid-template-rows: repeat(4, auto);
 }
