@@ -80,8 +80,78 @@ p {
     cursor: pointer;
 }
 
+.btn:active {
+    border: none;
+}
+
+.btn:focus {
+    outline: none;
+}
+
 .grid {
     display: grid;
     margin: 15px 0;
     grid-template-rows: repeat(4, auto);
 }
+
+.question {
+    margin: auto;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 50px 15px;
+}
+
+#question {
+    color: var(--primary-color);
+    text-align: left;
+    font-size: 2rem;
+}
+
+#view-high-scores:hover {
+    opacity: 70%;
+    cursor: pointer
+
+}
+/* .answerbtn {
+} */
+
+.banner {
+    font-size: 25px;
+    text-align: center;
+    color: rgba(199, 187, 187, 0.8);
+    font-style: italic;
+    margin: 0 100px;
+}
+
+.banner h2 {
+   border-top: 2px solid rgba(199, 187, 187, 0.8);
+   margin: 0 auto;
+   text-align: center;
+   padding-top: 5px;
+}
+
+ol {
+   list-style-type: number;
+}
+
+li {
+   font-size: 1rem;
+}
+
+.finish input {
+    outline:medium;
+    border-width: 1px;
+    padding: 5px;
+    border-radius: 4px;
+    width: 35%;
+    font-size: 1.5rem;
+}
+
+#high-score {
+    text-align:start;
+}
+
+.finish h1, .finish p {
+    text-align: left;
+}
+

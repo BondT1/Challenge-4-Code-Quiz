@@ -3,11 +3,25 @@ var questionViewEl = document.getElementById("question-view");
 var questionEl = document.getElementById("question");
 var answerEl = document.getElementById("answers");
 var viewHighScoreEl = document.getElementById("view-high-scores");
+var HighScoreBoxEl = document.getElementById("high-score-box")
+var HighScoreListEl = document.getElementById("high-score-list")
+var ScoreInitialsEl = document.getElementById("score-initials")
 
-var startQuizBtn = document.querySelector("#start-quiz");
+
+
+var startQuizBtnEL = document.querySelector("#start-quiz");
 var timerEl = document.querySelector("#timer");
 
-const questionEl = [
+
+startQuizBtnEL.addEventListener("click", startQuiz);
+viewHighScoreEl.addEventListener("click", HighScoresDisplay);
+ScoreInitialsEl.addEventListener("submit", HighScoreCreation);
+
+
+
+
+
+var questionEl = [
   { 
     question: 'question here',
     answers: [
@@ -27,7 +41,7 @@ const questionEl = [
       'Answer 3',
       'Answer 4',
     ],
-    correct: 1,  
+    correct: 3,  
   },
 
   { 
@@ -38,7 +52,7 @@ const questionEl = [
       'Answer 3',
       'Answer 4',
     ],
-    correct: 1,  
+    correct: 2,  
   },
     
   { 
@@ -49,7 +63,7 @@ const questionEl = [
       'Answer 3',
       'Answer 4',
     ],
-    correct: 1,  
+    correct: 0,  
   },
         
   { 
@@ -60,11 +74,11 @@ const questionEl = [
       'Answer 3',
       'Answer 4',
     ],
-    correct: 1,  
+    correct: 2,  
   },        
 ];
 
-var startQuizBtn = function() {
+var startQuiz = function() {
   homepageEl.classList.add("remove");
   homepageEl.classList.remove("add");
   questionViewEl.classList.add("add");
@@ -72,3 +86,18 @@ var startQuizBtn = function() {
 
 }
 
+var createStartPage = function() {
+  homepageEl.classList.add("remove");
+  homepageEl.classList.remove("add")
+  homepageEl.removeChild(homepageEl.lastChild)
+  HighScoreBoxEl.classList.remove("remove");
+  HighScoreBoxEl.classList.add("add");
+}
+
+var HighScoresDisplay = function() {
+  
+}
+
+var HighScoreCreation = function() {
+
+}
