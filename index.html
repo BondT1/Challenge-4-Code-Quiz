@@ -9,12 +9,15 @@
 </head>
 
 <body>
+
+<script src="./script.js"></script>
+
     <header>
         <h5 id="view-high-scores">View High Scores</h5>
         <h5>Time: <span id="timer"></span></h5>
     </header>
 
-    <section id="homepage" class="homepage">
+    <section id="homepage" class="add">
         <div class="box home">
             <h1>Coding Quiz Challenge</h1>
             <p>Answer the following multiple-choice coding questions within the time limit. Correct answers are worth 10 points. 
@@ -24,14 +27,44 @@
         </div>
     </section>
 
-    <section id="question-view">
+    <section id="question-view" class="remove">
         <div class="box question">
             <div id="question"></div>
             <div id="answers" class="grid"></div>
         </div>
     </section>
 
-    
+    <section id="quiz-finish" class="remove">
+        <div class="box finish">
+         <div id=score-result>
+             <h1>Quiz Complete!</h1>
+         </div>  
+         <form id="initials-box" class="initials">
+           <p> Enter Initials:  
+             <input type="text" name="initials" id="initials" class="text-input" />
+             <button class="btn start" id="sumbit" type="submit">Submit</button> </p>
+        </form>
+        </div>
+    </section>
+
+      <section id="high" class="remove">
+        <div class="high-scores box">
+          <h1 class="high-score">High Scores</h1>
+          <ol id="list-high-scores" class="list-scores"></ol>
+        <div>
+          <button class="btn" id="go-back">Go back</button>
+          <button class="btn" id="clear-high-scores">Clear high scores</button>
+        </div>
+      </div>
+    </section>
+
+    <div class="remove" id="correct">
+      <h2>Correct</h2>
+    </div>
+
+    <div class="remove" id="incorrect">
+      <h2>Incorrect</h2>
+    </div>
 
 
     
